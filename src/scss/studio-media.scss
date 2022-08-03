@@ -1,4 +1,15 @@
 
+
+
+
+
+
+                        // NAV
+
+
+
+
+
 @media only screen and (max-width: 1378px) {
 
     .navParent {
@@ -79,6 +90,17 @@
     }
 
 }
+
+
+
+
+
+
+                        // HEADER
+
+
+
+
 
 @media only screen and (max-width: 1670px) {
 
@@ -244,6 +266,151 @@
             font-size: 18px !important;
         }
 
+    }
+
+}
+
+
+
+
+
+
+                        // PRINCIPLES
+
+
+
+
+
+@media only screen and (max-width: 1670px) {
+
+    .principlesParent {
+        width: 50% !important;
+    }
+
+}
+
+@media only screen and (max-width: 1490px) {
+
+    .principlesParent {
+        width: 60% !important;
+    }
+
+}
+
+@media only screen and (max-width: 1245px) {
+
+    .principlesParent {
+
+        width: 70% !important;
+
+        h1 {
+            font-size: 40px !important;
+        }
+
+        h3 {
+            font-size: 25px !important;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1020px) {
+
+    .principlesParent {
+
+        width: 80% !important;
+
+        h1 {
+            font-size: 40px !important;
+        }
+
+        h3 {
+            font-size: 25px !important;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 920px) {
+
+    #principlesParent {
+        min-height: 970px !important;
+    }
+
+    .principlesParent {
+
+        h3 {
+
+            margin-bottom: 20px !important;
+        }
+
+        
+        img[src = "img/diagram-1.png"],
+        img[src = "img/diagram-2.png"],
+        img[src = "img/diagram-3.png"] {
+            display: none;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 790px) {
+
+    #principlesParent {
+        min-height: 920px !important;
+    }
+
+    .principlesParent {
+        width: 100% !important;
+        margin-left: 5% !important;
+
+        h1 {
+            font-size: 35px !important;
+        }
+
+        h3 {
+            margin-top: 20px !important;
+            font-size: 20px !important;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 590px) {
+
+    .principlesParent {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .principlesParent {
+
+        h1 {
+            text-align: center !important;
+        }
+
+        h3 {
+            text-align: center !important;
+        }
+
+        h2::before {
+            display: none !important;
+        }
+
+        .principleRow {
+            justify-content: center !important;
+        }
+
+        p {
+            text-align: center !important;
+        }
     }
 
 }

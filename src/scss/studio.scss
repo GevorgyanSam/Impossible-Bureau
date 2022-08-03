@@ -42,19 +42,28 @@ $font-family2: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 }
 
 
+
+
+
+                        // NAV
+
+
+
+
+
 nav {
     display: none;
 }
 
 .navParent {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: #000222;
-    z-index: 1;
+    z-index: 9999;
 
     .row {
         height: 100% !important;
@@ -179,7 +188,7 @@ nav {
     text-align: center;
     height: 70px;
     background-color: white;
-    z-index: 999;
+    z-index: 99999;
     position: fixed;
     width: 100%;
 
@@ -219,6 +228,16 @@ nav {
     }
 }
 
+
+
+
+
+                        // HEADER
+
+
+
+
+   
 header section {
     background-color: $secColor2;
 }
@@ -230,7 +249,7 @@ header section {
     text-align: start;
     margin: 0 auto;
     padding-top: 100px; 
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     
     .headerChild {
         margin: 0 auto;
@@ -328,6 +347,299 @@ header section {
                     transform: translateX(0);
                 }
 
+            }
+        }
+    }
+}
+
+
+
+
+
+                        // PRINCIPLES
+
+
+
+
+   
+#principlesParent {
+    padding: 80px 0;
+    background-color: $secColor1;
+    min-height: 1030px;
+
+    .principlesParent {
+        display: none;
+        width: 40%;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: start !important;
+        margin: 0 auto;
+
+        h1 {
+            color: black;
+            font-size: 45px;
+            font-family: $font-family2;
+            margin-top: 20px;
+            animation: headerAnim1 1s forwards .5s;
+            opacity: 0;
+
+            @keyframes headerAnim1 {
+
+                0% {
+                    opacity: 0;
+                    transform: translateX(-100px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+
+            }
+        }
+
+        h3 {
+            color: $gray;
+            font-size: 30px;
+            font-weight: 400;
+            font-family: $font-family1;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            animation: PrincipleH3Anim 1s forwards .8s;
+            opacity: 0;
+
+            @keyframes PrincipleH3Anim {
+
+                0% {
+                    opacity: 0;
+                    transform: translateX(-100px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+
+            }
+        }
+
+        .principleRow {
+            display: flex;
+            position: relative;
+
+            .principleCol1 {
+                opacity: 0;
+                animation: principleCol1Anim .7s forwards 1.4s;
+
+                @keyframes principleCol1Anim {
+
+                    0% {
+                        opacity: 0;
+                        transform: translateX(-60px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+
+                }
+            }
+
+            .principleCol2 {
+                opacity: 0;
+                animation: principleCol2Anim .7s forwards 1.6s;
+
+                @keyframes principleCol2Anim {
+
+                    0% {
+                        opacity: 0;
+                        transform: translateX(-60px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+
+                }
+            }
+
+            .principleCol3 {
+                opacity: 0;
+                animation: principleCol3Anim .7s forwards 1.8s;
+
+                @keyframes principleCol3Anim {
+
+                    0% {
+                        opacity: 0;
+                        transform: translateX(-60px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+
+                }
+            }
+
+            div {
+                margin-top: 50px;
+
+                img {
+                    width: 360px;
+                    position: absolute;
+                    right: -50px;
+                    top: 10px;
+                }
+
+                img[src = "img/diagram-1.png"] {
+                    z-index: 3;
+                    animation: principleImgAnim1 .7s forwards 1s;
+                    opacity: 0;
+
+                    @keyframes principleImgAnim1 {
+
+                        0% {
+                            opacity: 0;
+                            transform: translateY(100px);
+                        }
+
+                        100% {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+
+                    }
+                }
+
+                img[src = "img/diagram-2.png"] {
+                    z-index: 2;
+                    animation: principleImgAnim2 .7s forwards 1s;
+                    opacity: 0;
+
+                    @keyframes principleImgAnim2 {
+
+                        0% {
+                            opacity: 0;
+                        }
+
+                        100% {
+                            opacity: 1;
+                        }
+
+                    }
+                }
+
+                img[src = "img/diagram-3.png"] {
+                    z-index: 1;
+                    animation: principleImgAnim3 .7s forwards 1s;
+                    opacity: 0;
+
+                    @keyframes principleImgAnim3 {
+
+                        0% {
+                            opacity: 0;
+                            transform: translateY(-100px);
+                        }
+
+                        100% {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+
+                    }
+                }
+    
+                .principleH1First {
+                    color: #6550ac;
+                    font-family: $font-family2;
+                    font-size: 25px;
+                    position: relative;
+                    margin-left: 50px;
+    
+                    &::before {
+                        content: "1";
+                        color: #6550ac;
+                        font-size: 17px;
+                        display: flex;
+                        position: absolute;
+                        height: 30px;
+                        width: 30px;
+                        transform: translate(-50%, -50%);
+                        top: 55%;
+                        left: -12%;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        border-radius: 50%;
+                        border: 1px solid #6550ac;
+                        z-index: 3 !important;
+                    }
+                }
+
+                p {
+                    color: $gray;
+                    font-size: 14px;
+                    margin-top: 20px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+
+                .principleH1Second {
+                    color: #cc2886;
+                    font-family: $font-family2;
+                    font-size: 25px;
+                    position: relative;
+                    margin-left: 50px;
+    
+                    &::before {
+                        content: "2";
+                        color: #cc2886;
+                        font-size: 17px;
+                        display: flex;
+                        position: absolute;
+                        height: 30px;
+                        width: 30px;
+                        transform: translate(-50%, -50%);
+                        top: 55%;
+                        left: -12%;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        border-radius: 50%;
+                        border: 1px solid #cc2886;
+                        z-index: 2 !important;
+                    }
+                }
+
+                .principleH1Third {
+                    color: #e13930;
+                    font-family: $font-family2;
+                    font-size: 25px;
+                    position: relative;
+                    margin-left: 50px;
+    
+                    &::before {
+                        content: "3";
+                        color: #e13930;
+                        font-size: 17px;
+                        display: flex;
+                        position: absolute;
+                        height: 30px;
+                        width: 30px;
+                        transform: translate(-50%, -50%);
+                        top: 55%;
+                        left: -12%;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        border-radius: 50%;
+                        border: 1px solid #e13930;
+                        z-index: 1 !important;
+                    }
+                }
             }
         }
     }
