@@ -110,11 +110,27 @@ nav {
     position: absolute;
     height: 100%;
     width: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: #000222;
+
+    .row {
+        height: 100% !important;
+    }
+
+    .col-md-3{
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transition: $transition;
+
+        &:hover {
+            background-color: #c22081;
+        }
+    }
 
     .navIcon {
         color: white;
@@ -133,20 +149,17 @@ nav {
     }
 
     a {
-        height: 100%;
-        width: 25%;
         transition: $transition;
         cursor: pointer;
-        padding: 0 10px;
 
-        &:hover {
-            background-color: #c22071;
+        .navChild {
+            margin: 350px 0;
+            padding: 0 10px;
         }
 
         h1 {
             color: white;
             font-family: $font-family2;
-            margin-top: 320px;
             font-size: 50px;
             opacity: 0;
             animation: navH1Anim 1s forwards .5s;
