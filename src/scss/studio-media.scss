@@ -281,6 +281,7 @@
 
 
 
+
 @media only screen and (max-width: 1670px) {
 
     .principlesParent {
@@ -413,4 +414,148 @@
         }
     }
 
+}
+
+
+
+
+
+
+                        // SERVICES
+
+
+
+
+                        
+
+@media only screen and (max-width: 1670px) {
+
+    .servicesParent {
+        width: 50% !important;
+    }
+
+}
+
+@media only screen and (max-width: 1490px) {
+
+    .servicesParent {
+        width: 60% !important;
+    }
+
+}
+
+@media only screen and (max-width: 1245px) {
+
+    #servicesParent {
+        min-height: 890px !important;
+    }
+
+    .servicesParent {
+
+        width: 70% !important;
+
+        h1 {
+            font-size: 35px !important;
+        }
+
+        h3 {
+            font-size: 22px !important;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+    .servicesParent {
+
+        width: 85% !important;
+
+        h1 {
+            font-size: 35px !important;
+        }
+
+        h3 {
+            font-size: 22px !important;
+        }
+
+        .servicesImgParent {
+
+            display: none !important;
+        }
+
+        .servicesContentParent {
+
+            display: block !important;
+
+            .servicesContent {
+                margin-top: 40px !important;
+
+                h2 {
+                    color: black;
+                    font-size: 23px !important;
+                    margin-bottom: 20px !important;
+                }
+
+                ul {
+                    padding: 0 20px 0 15px !important;
+
+                    li {
+                        margin-top: 12px !important;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .servicesParent {
+
+        width: 100% !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+
+        h1 {
+            text-align: center !important;
+            font-size: 35px !important;
+        }
+
+        h3 {
+            text-align: center !important;
+            font-size: 22px !important;
+        }
+
+        .servicesContentParent {
+
+            display: block !important;
+
+            .servicesContent {
+                margin-top: 40px !important;
+                text-align: center !important;
+
+                h2 {
+                    text-align: center !important;
+                    color: black;
+                    font-size: 23px !important;
+                    margin-bottom: 20px !important;
+                }
+
+                ul {
+                    text-align: center !important;
+                    padding: 0 !important;
+                    list-style: none !important;
+
+                    li {
+                        margin-top: 12px !important;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -18,13 +18,25 @@ $(function () {
 
     })
 
+    let win = $(window).scrollTop() + $(window).height();
+
     $(window).scroll(function () {
 
-        let win = $(window).scrollTop() + $(window).height();
         let principleParent = $(".principlesParent").offset().top + $(".principlesParent").height() / 2;
 
         if(win >= principleParent) {
             $(".principlesParent").css({
+                display: "block",
+            })
+        }
+    })
+
+    $(window).scroll(function () {
+
+        let servicesParent = $(".servicesParent").offset().top + $(".servicesParent").height() / 2;
+
+        if(win >= servicesParent) {
+            $(".servicesParent").css({
                 display: "block",
             })
         }
