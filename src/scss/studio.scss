@@ -1045,3 +1045,154 @@ header section {
         }
     }
 }
+
+.teamResumeParent {
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    .btnParent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        div:nth-child(1) {
+            align-items: flex-start;
+            justify-content: start;
+            text-align: start;
+        }
+
+        div:nth-child(2) {
+            align-items: flex-end;
+            justify-content: end;
+            text-align: end;
+        }
+
+        div {
+            width: 100%;
+
+            #all {
+                @include button(#cc2886, 18px, white);
+                border: 2px solid #cc2886;
+
+                &:hover {
+                    border: 2px solid transparent;
+                }
+            }
+
+            #back,
+            #next {
+                color: #cc2886;
+                background-color: transparent;
+                border-radius: 50%;
+                border: 2px solid #cc2886;
+                height: 40px;
+                width: 40px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                margin: 0 5px;
+                transition: $transition;
+
+                &:hover {
+                    border: 2px solid transparent;
+                    color: white;
+                    background-color: #cc2886;
+                }
+            }
+        }
+    }
+    .resumeContent {
+        width: 100%;
+        position: relative;
+
+        h1 {
+            font-family: $font-family2;
+            color: black;
+            font-size: 80px;
+            margin-top: 40px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        h4 {
+            color: $gray;
+            font-size: 20px;
+            font-family: $font-family1;
+            margin-top: 10px;
+        }
+
+        h2 {
+            color: $gray;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            font-size: 22px;
+            font-weight: 400;
+            margin-top: 35px;
+            padding-top: 35px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 2px;
+                width: 50px;
+                background-color: #cc2886;
+            }
+        }
+
+        p {
+            margin-top: 10px;
+            color: $gray;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .counterParent {
+            width: 100%;
+
+            .counterRow {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                text-align: start;
+                width: 100%;
+
+                .counterCol {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    text-align: start;
+                    width: 100%;
+                    margin-top: 60px;
+
+                    div {
+                        margin: 0 15px;
+
+                        i {
+                            color: #cc2886;
+                            font-size: 60px;
+                        }
+                    }
+
+                    .count {
+                        font-size: 40px;
+                        font-weight: 600;
+                        font-style: italic;
+                        color: $gray;
+                    }
+
+                    .countBottom {
+                        color: $gray;
+                        font-size: 20px;
+                        font-weight: 400;
+                        font-family: $font-family1;
+                    }
+                }
+            }
+        }
+    }
+}
