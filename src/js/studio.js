@@ -2,21 +2,45 @@
 
 $(function () {
 
+
+
+
+                        // NAVIGATION
+
+
+
+                        
     $(".navIcon2").click(() => {
 
-        $("nav").fadeIn(500)
+        $("nav").css({
+            display: "block"
+        })
 
-        $(".navRow").fadeOut(500)
+        $(".navRow").css({
+            display: "none"
+        })
 
     })
 
     $(".navIcon").click(() => {
 
-        $("nav").fadeOut(500)
+        $("nav").css({
+            display: "none",
+        })
 
-        $(".navRow").fadeIn(500)
+        $(".navRow").css({
+            display: "flex"
+        })
 
     })
+
+
+
+
+                        // SCROLL ANIMATIONS
+
+
+
 
     let win = $(window).scrollTop() + $(window).height();
 
@@ -37,6 +61,17 @@ $(function () {
 
         if(win >= servicesParent) {
             $(".servicesParent").css({
+                display: "block",
+            })
+        }
+    })
+
+    $(window).scroll(function () {
+
+        let servicesParent = $(".clientsParent").offset().top + $(".clientsParent").height() / 2;
+
+        if(win >= servicesParent) {
+            $(".clientsParent").css({
                 display: "block",
             })
         }

@@ -790,3 +790,80 @@ header section {
         }
     }
 }
+
+
+
+
+
+                        // SERVICES
+
+
+
+
+   
+
+#clientsParent {
+    background-color: $secColor1;
+    padding: 80px 0;
+    min-height: 760px;
+
+    .clientsParent {
+        display: none;
+        width: 40%;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: start !important;
+        margin: 0 auto;
+
+        h1 {
+            color: black;
+            font-size: 45px;
+            font-family: $font-family2;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            animation: headerAnim1 1s forwards .5s;
+            opacity: 0;
+
+            @keyframes headerAnim1 {
+
+                0% {
+                    opacity: 0;
+                    transform: translateX(-100px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+
+            }
+        }
+
+        .clientsImgParent {
+            display: flex;
+            align-items: center !important;
+            justify-content: center !important;
+            text-align: center !important;
+            animation: clientsImgAnim 1s forwards .8s;
+            opacity: 0;
+
+            @keyframes clientsImgAnim {
+
+                0% {
+                    opacity: 0;
+                    transform: translateX(-100px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
