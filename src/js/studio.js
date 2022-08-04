@@ -43,38 +43,16 @@ $(function () {
 
 
     let win = $(window).scrollTop() + $(window).height();
+    let sec = $("section > div").offset().top + $("section > div").height() / 2
 
     $(window).scroll(function () {
-
-        let principleParent = $(".principlesParent").offset().top + $(".principlesParent").height() / 2;
-
-        if(win >= principleParent) {
-            $(".principlesParent").css({
-                display: "block",
-            })
-        }
-    })
-
-    $(window).scroll(function () {
-
-        let servicesParent = $(".servicesParent").offset().top + $(".servicesParent").height() / 2;
-
-        if(win >= servicesParent) {
-            $(".servicesParent").css({
-                display: "block",
-            })
-        }
-    })
-
-    $(window).scroll(function () {
-
-        let servicesParent = $(".clientsParent").offset().top + $(".clientsParent").height() / 2;
-
-        if(win >= servicesParent) {
-            $(".clientsParent").css({
-                display: "block",
-            })
-        }
+        $("section").each(function() {
+            if(win >= sec) {
+                $("section > div").css({
+                    display: "block",
+                })
+            }
+        })
     })
 
 })

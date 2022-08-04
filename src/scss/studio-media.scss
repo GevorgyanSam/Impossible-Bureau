@@ -636,3 +636,78 @@
     }
 
 }
+
+
+
+
+
+                        // TEAM
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+
+    #team {
+        min-height: 950px !important;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #team {
+        min-height: 900px !important;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    #team {
+        min-height: 800px !important;
+
+        .teamParent {
+
+            .teamContentParent {
+
+                h3 {
+                    font-size: 19px !important;
+                }
+
+                p {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    #team {
+
+        .teamParent {
+
+            h1 {
+                text-align: center !important;
+                margin-left: 0 !important;
+                font-size: 40px !important;
+            }
+
+            .teamContentParent {
+
+                h3 {
+                    font-size: 22px !important;
+                }
+
+                p {
+                    font-size: 20px !important;
+                }
+            }
+        }
+    }
+
+}
