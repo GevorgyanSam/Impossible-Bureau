@@ -1047,6 +1047,7 @@ header section {
 }
 
 .teamResumeParent {
+    display: none !important;
     width: 45%;
     margin: 0 auto;
     margin-top: 100px;
@@ -1075,6 +1076,22 @@ header section {
             #all {
                 @include button(#cc2886, 18px, white);
                 border: 2px solid #cc2886;
+                animation: allBtnAnim .7s forwards .5s;
+                opacity: 0;
+
+                @keyframes allBtnAnim {
+
+                    0% {
+                        opacity: 0;
+                        transform: translateX(-50px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0px);
+                    }
+
+                }
 
                 &:hover {
                     border: 2px solid transparent;
@@ -1094,6 +1111,22 @@ header section {
                 text-align: center;
                 margin: 0 5px;
                 transition: $transition;
+                animation: controlBtnAnim .7s forwards .5s;
+                opacity: 0;
+
+                @keyframes controlBtnAnim {
+
+                    0% {
+                        opacity: 0;
+                        transform: translateX(50px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0px);
+                    }
+
+                }
 
                 &:hover {
                     border: 2px solid transparent;
@@ -1114,6 +1147,22 @@ header section {
             margin-top: 40px;
             font-weight: 400;
             letter-spacing: 1px;
+            animation: resumeContentH1Anim .7s forwards .5s;
+            opacity: 0;
+
+            @keyframes resumeContentH1Anim {
+
+                0% {
+                    opacity: 0;
+                    transform: translateX(-50px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+
+            }
         }
 
         h4 {
@@ -1121,6 +1170,22 @@ header section {
             font-size: 20px;
             font-family: $font-family1;
             margin-top: 10px;
+            animation: resumeContentH4Anim .7s forwards .7s;
+            opacity: 0;
+
+            @keyframes resumeContentH4Anim {
+
+                0% {
+                    opacity: 0;
+                    transform: translateX(-50px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+
+            }
         }
 
         h2 {
@@ -1132,6 +1197,22 @@ header section {
             margin-top: 35px;
             padding-top: 35px;
             position: relative;
+            animation: resumeContentH2Anim .7s forwards .9s;
+            opacity: 0;
+
+            @keyframes resumeContentH2Anim {
+
+                0% {
+                    opacity: 0;
+                    transform: translateX(-50px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+
+            }
 
             &::before {
                 content: "";
@@ -1139,8 +1220,21 @@ header section {
                 top: 0;
                 left: 0;
                 height: 2px;
-                width: 50px;
+                width: 0;
                 background-color: #cc2886;
+                animation: resumeBeforeAnim .7s forwards .9s;
+
+                @keyframes resumeBeforeAnim {
+
+                    0% {
+                        width: 0;
+                    }
+
+                    100% {
+                        width: 50px;
+                    }
+
+                }
             }
         }
 
@@ -1149,6 +1243,22 @@ header section {
             color: $gray;
             font-weight: bold;
             font-size: 14px;
+            animation: resumeContentPAnim .7s forwards 1.1s;
+            opacity: 0;
+
+            @keyframes resumeContentPAnim {
+
+                0% {
+                    opacity: 0;
+                    transform: translateX(-50px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+
+            }
         }
 
         .counterParent {
@@ -1160,6 +1270,46 @@ header section {
                 justify-content: flex-start;
                 text-align: start;
                 width: 100%;
+
+                > div:nth-child(1),
+                > div:nth-child(3) {
+                    animation: CounterCol1Anim .7s forwards 1.3s;
+                    opacity: 0;
+
+                    @keyframes CounterCol1Anim {
+
+                        0% {
+                            opacity: 0;
+                            transform: translateX(-50px);
+                        }
+
+                        100% {
+                            opacity: 1;
+                            transform: translateX(0px);
+                        }
+
+                    }
+                }
+
+                > div:nth-child(2),
+                > div:nth-child(4) {
+                    animation: CounterCol2Anim .7s forwards 1.5s;
+                    opacity: 0;
+
+                    @keyframes CounterCol2Anim {
+
+                        0% {
+                            opacity: 0;
+                            transform: translateX(-50px);
+                        }
+
+                        100% {
+                            opacity: 1;
+                            transform: translateX(0px);
+                        }
+
+                    }
+                }
 
                 .counterCol {
                     display: flex;
