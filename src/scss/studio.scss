@@ -816,7 +816,7 @@ header section {
 
 
 
-                        // SERVICES
+                        // CLIENT
 
 
 
@@ -905,7 +905,7 @@ header section {
     min-height: 1050px;
 
     .teamParent {
-        display: none;
+        // display: none;
         align-items: center !important;
         justify-content: center !important;
         text-align: center !important;
@@ -1046,8 +1046,13 @@ header section {
     }
 }
 
+#jeffResume,
+#blakeResume,
+#juliaResume {
+    display: none;
+}
+
 .teamResumeParent {
-    display: none !important;
     width: 45%;
     margin: 0 auto;
     margin-top: 100px;
@@ -1073,7 +1078,7 @@ header section {
         div {
             width: 100%;
 
-            #all {
+            .all {
                 @include button(#cc2886, 18px, white);
                 border: 2px solid #cc2886;
                 animation: allBtnAnim .7s forwards .5s;
@@ -1098,8 +1103,12 @@ header section {
                 }
             }
 
-            #back,
-            #next {
+            .back,
+            .next,
+            .back2,
+            .next2,
+            .back3,
+            .next3 {
                 color: #cc2886;
                 background-color: transparent;
                 border-radius: 50%;
