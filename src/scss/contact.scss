@@ -133,7 +133,7 @@ nav {
             font-family: $font-family2;
             font-size: 50px;
             opacity: 0;
-            animation: navH1Anim 1s forwards .5s;
+            animation: navH1Anim 1s forwards;
 
             @keyframes navH1Anim {
 
@@ -159,7 +159,7 @@ nav {
             transform-origin: center;
             margin-top: 40px;
             background-color: rgb(255 255 255 / 70%);
-            animation: navBeforeAnim 1s forwards 1.6s;
+            animation: navBeforeAnim 1s forwards 1s;
 
             @keyframes navBeforeAnim {
 
@@ -182,7 +182,7 @@ nav {
             font-size: 25px;
             position: relative;
             opacity: 0;
-            animation: navP1Anim 1s forwards .8s;
+            animation: navP1Anim 1s forwards .3s;
 
             @keyframes navP1Anim {
 
