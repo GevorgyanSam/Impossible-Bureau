@@ -184,6 +184,117 @@ $(function () {
 
     }
 
+    function nadya() {
+
+        $({ countNum: 0 }).animate({ countNum: 40 }, {
+            delay: 1800,
+            duration: 3000,
+            easing: 'linear',
+            step: function(countNum) {
+              $(".count13").text(Math.ceil(countNum))
+            },
+        });
+
+        $({ countNum: 0 }).animate({ countNum: 12 }, {
+            delay: 1500,
+            duration: 3350,
+            easing: 'linear',
+            step: function(countNum) {
+              $(".count15").text(Math.ceil(countNum))
+            },
+        });
+
+        $({ countNum: 0 }).animate({ countNum: 23963 }, {
+            delay: 1500,
+            duration: 3800,
+            easing: 'linear',
+            step: function(countNum) {
+              $(".count16").text(Math.ceil(countNum))
+            },
+        });
+
+    }
+
+    function eric() {
+
+        $({ countNum: 0 }).animate({ countNum: 14 }, {
+            delay: 1800,
+            duration: 3100,
+            easing: 'linear',
+            step: function(countNum) {
+              $(".count17").text(Math.ceil(countNum))
+            },
+        });
+
+        $({ countNum: 0 }).animate({ countNum: 10 }, {
+            delay: 1500,
+            duration: 3000,
+            easing: 'linear',
+            step: function(countNum) {
+              $(".count18").text(Math.ceil(countNum))
+            },
+        });
+
+        $({ countNum: 0 }).animate({ countNum: 90 }, {
+            delay: 1500,
+            duration: 3800,
+            easing: 'linear',
+            step: function(countNum) {
+              $(".count19").text(Math.ceil(countNum))
+            },
+        });
+
+        $({ countNum: 0 }).animate({ countNum: 65 }, {
+            delay: 1500,
+            duration: 3300,
+            easing: 'linear',
+            step: function(countNum) {
+              $(".count20").text(Math.ceil(countNum))
+            },
+        });
+
+    }
+
+    function anthony() {
+
+        $({ countNum: 0 }).animate({ countNum: 13427 }, {
+            delay: 1500,
+            duration: 4000,
+            easing: 'linear',
+            step: function(countNum) {
+              $(".count21").text(Math.ceil(countNum))
+            },
+        });
+
+        $({ countNum: 0 }).animate({ countNum: 381 }, {
+            delay: 1500,
+            duration: 3000,
+            easing: 'linear',
+            step: function(countNum) {
+              $(".count22").text(Math.ceil(countNum))
+            },
+        });
+
+        $({ countNum: 0 }).animate({ countNum: 139 }, {
+            delay: 1500,
+            duration: 3000,
+            easing: 'linear',
+            step: function(countNum) {
+              $(".count23").text(Math.ceil(countNum))
+            },
+        });
+
+        $({ countNum: 0 }).animate({ countNum: 5908 }, {
+            delay: 1500,
+            duration: 3500,
+            easing: 'linear',
+            step: function(countNum) {
+              $(".count24").text(Math.ceil(countNum))
+            },
+        });
+
+    }
+
     $("#jeff").click(() => {
 
         $(".teamParent").css({
@@ -223,6 +334,48 @@ $(function () {
         })
 
         julia()
+
+    })
+
+    $("#nadya").click(() => {
+
+        $(".teamParent").css({
+            display: "none",
+        })
+
+        $("#nadyaResume").css({
+            display: "block",
+        })
+
+        nadya()
+
+    })
+
+    $("#eric").click(() => {
+
+        $(".teamParent").css({
+            display: "none",
+        })
+
+        $("#ericResume").css({
+            display: "block",
+        })
+
+        eric()
+
+    })
+
+    $("#anthony").click(() => {
+
+        $(".teamParent").css({
+            display: "none",
+        })
+
+        $("#anthonyResume").css({
+            display: "block",
+        })
+
+        anthony()
 
     })
 
@@ -266,11 +419,75 @@ $(function () {
 
     })
 
-    // $(".back").click(() => {
+    $(".next3").click(() => {
 
+        $("#juliaResume").css({
+            display: "none",
+        })
 
+        $("#nadyaResume").css({
+            display: "block",
+        })
 
-    // })
+        nadya()
+
+    })
+
+    $(".next4").click(() => {
+
+        $("#nadyaResume").css({
+            display: "none",
+        })
+
+        $("#ericResume").css({
+            display: "block",
+        })
+
+        eric()
+
+    })
+
+    $(".next5").click(() => {
+
+        $("#ericResume").css({
+            display: "none",
+        })
+
+        $("#anthonyResume").css({
+            display: "block",
+        })
+
+        anthony()
+
+    })
+
+    $(".next6").click(() => {
+
+        $("#anthonyResume").css({
+            display: "none",
+        })
+
+        $("#jeffResume").css({
+            display: "block",
+        })
+
+        jeff()
+
+    })
+
+    $(".back").click(() => {
+
+        $("#jeffResume").css({
+            display: "none",
+        })
+
+        $("#anthonyResume").css({
+            display: "block",
+        })
+
+        anthony()
+
+    })
 
     $(".back2").click(() => {
 
@@ -297,6 +514,48 @@ $(function () {
         })
 
         blake()
+
+    })
+
+    $(".back4").click(() => {
+
+        $("#nadyaResume").css({
+            display: "none",
+        })
+
+        $("#juliaResume").css({
+            display: "block",
+        })
+
+        julia()
+
+    })
+
+    $(".back5").click(() => {
+
+        $("#ericResume").css({
+            display: "none",
+        })
+
+        $("#nadyaResume").css({
+            display: "block",
+        })
+
+        nadya()
+
+    })
+
+    $(".back6").click(() => {
+
+        $("#anthonyResume").css({
+            display: "none",
+        })
+
+        $("#ericResume").css({
+            display: "block",
+        })
+
+        eric()
 
     })
 
