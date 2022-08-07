@@ -525,6 +525,52 @@ header section {
     }
 }
 
+.contactParent2 {
+    width: 100%;
+    background-color: white;
+    padding: 50px 0;
+
+    .contactContent2 {
+        width: 52%;
+        margin: 0 auto;
+        opacity: 0;
+        transform: translateX(-100px);
+        animation: Content2Anim .5s forwards .5s;
+
+        @keyframes Content2Anim {
+            
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+        }
+
+        h1 {
+            font-family: roboto;
+            color: black;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 50px;
+        }
+
+        h5 {
+            color: $gray;
+            font-family: $font-family1;
+            font-size: 30px;
+            font-weight: 400;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
 
 
 
