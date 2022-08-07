@@ -6,7 +6,6 @@
     box-sizing: border-box !important;
     outline: none !important;
     text-decoration: none !important;
-    // list-style: none !important;
 }
 
 $secColor1: #f5f6fa;
@@ -377,6 +376,151 @@ header section {
                 }
 
             }
+        }
+    }
+}
+
+
+
+
+
+                        // CONTACT
+
+
+
+
+
+.contactParent {
+    width: 100%;
+    padding: 80px 0;
+    background-color: white;
+
+    .contactContentRow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .img {
+            display: none;
+        }
+
+        .contactContent {
+            width: 100%;
+
+            img {
+                width: 100%;
+                transform: scale(0);
+                animation: contactImgAnim .7s forwards .5s;
+
+                @keyframes contactImgAnim {
+
+                    0% {
+                        transform: scale(0);
+                    }
+
+                    100% {
+                        transform: scale(1.0);
+                    }
+
+                }
+            }
+
+            .text {
+                text-align: start;
+                margin-left: 65%;
+                transform: translateX(-50%);
+
+                p {
+                    color: $gray;
+                    font-size: 15px;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    margin: 6px 0;
+                }
+
+                h3 {
+                    color: black;
+                    font-family: $font-family2;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    font-size: 40px;
+                }
+
+                h5 {
+                    color: $gray;
+                    letter-spacing: 1px;
+                    font-family: $font-family1;
+                    font-weight: 400;
+                    font-size: 20px;
+                    margin: 15px 0;
+                }
+
+                button {
+                    @include button(#ff1353, 17px, white);
+                    margin: 10px 0;
+                }
+            }
+
+            .text2 {
+                text-align: start;
+                margin-left: 49%;
+                transform: translateX(-50%);
+
+                p {
+                    color: $gray;
+                    font-size: 15px;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    margin: 6px 0;
+                }
+
+                h3 {
+                    color: black;
+                    font-family: $font-family2;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    font-size: 40px;
+                }
+
+                h5 {
+                    color: $gray;
+                    letter-spacing: 1px;
+                    font-family: $font-family1;
+                    font-weight: 400;
+                    font-size: 20px;
+                    margin: 15px 0;
+                }
+
+                button {
+                    @include button(#ff1353, 17px, white);
+                    margin: 10px 0;
+                }
+            }
+        }
+
+        .text,
+        .text2 {
+
+            
+            transform: translateX(-80%);
+            opacity: 0;
+            animation: contactTextAnim .7s forwards .5s;
+
+            @keyframes contactTextAnim {
+                
+                0% {
+                    opacity: 0;
+                    transform: translateX(-80%);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateX(-50%);
+                }
+
+            }
+
         }
     }
 }

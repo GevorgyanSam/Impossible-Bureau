@@ -274,6 +274,178 @@
 
 
 
+                        // CONTACT
+
+
+
+
+
+@media only screen and (max-width: 1500px) {
+    
+    .contactContent {
+
+        .text {
+            margin-left: 55% !important;
+        }
+
+        .text2 {
+            margin-left: 59% !important;
+        }
+    
+    }
+
+}
+
+@media only screen and (max-width: 1170px) {
+    
+    .contactContent {
+
+        .text {
+            margin-left: 50% !important;
+
+            h3 {
+                font-size: 35px !important;
+            }
+
+            h5 {
+                font-size: 18px !important;
+            }
+        }
+
+        .text2 {
+            margin-left: 52% !important;
+
+            h3 {
+                font-size: 35px !important;
+            }
+
+            h5 {
+                font-size: 18px !important;
+            }
+        }
+    
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+    .contactContent {
+
+        .text,
+        .text2 {
+
+            margin: 0 auto !important;
+            text-align: center !important;
+            transform: translate(0, 0) !important;
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    
+    .contactContent {
+
+        .text,
+        .text2 {
+
+            h3 {
+                font-size: 30px !important;
+            }
+
+            h5 {
+                font-size: 16px !important;
+            }
+
+            button {
+                margin: 2px 0 !important;
+                padding: 5px 25px !important;
+                font-size: 15px !important;
+                font-weight: 400 !important;
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 780px) {
+
+    .contactParent {
+        padding: 0 !important;
+        padding-bottom: 40px !important;
+    }
+
+    .contactContentRow {
+        display: block !important;
+
+        .img {
+            display: block !important;
+            width: 100%;
+            margin: 40px 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .none {
+            display: none !important;
+        }
+
+        .text,
+        .text2 {
+
+            h3 {
+                font-size: 40px !important;
+            }
+
+            h5 {
+                font-size: 20px !important;
+                margin: 15px 0 !important;
+            }
+
+            button {
+                margin: 5px 0 !important;
+                padding: 5px 25px !important;
+                font-size: 16px !important;
+                font-weight: 600 !important;
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+    .contactContentRow {
+
+        .text,
+        .text2 {
+
+            h3 {
+                font-size: 30px !important;
+            }
+
+            h5 {
+                font-size: 18px !important;
+            }
+
+        }
+
+    }
+
+} 
+
+
+
+
+
                         // FOOTER
 
 
