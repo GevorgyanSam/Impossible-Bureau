@@ -34,4 +34,8 @@ $(function () {
 
     })
 
+    $("#submit").click((e) => {
+        e.preventDefault()
+    })
+
 })
