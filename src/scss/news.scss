@@ -451,6 +451,120 @@ header section {
 
 
 
+                        // TAB
+
+
+
+
+
+.tabParent {
+    padding: 80px 0;
+    background-color: white;
+    width: 40%;
+    margin: 0 auto;
+
+    a {
+        color: black;
+        font-size: 40px;
+        transition: $transition;
+
+        i {
+            color: black;
+            font-size: 35px;
+            margin-right: 10px;
+            transition: $transition;
+        }
+
+        &:hover,
+        &:hover i {
+            color: #ff1353;
+        }
+    }
+
+    .tabRowParent {
+        min-height: 200px;
+        margin-top: 40px;
+    }
+
+    .tabRow {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: start;
+        animation: tabRowAnim .8s forwards;
+
+        @keyframes tabRowAnim {
+
+            0% {
+                opacity: 0;
+                transform: translateX(-80px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+
+        }
+
+        .tabContent {
+            width: 100%;
+            padding-right: 40px;
+        }
+
+        p {
+            color: $gray;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        h4 {
+            color: $gray;
+            letter-spacing: 1px;
+            font-weight: 400;
+            font-size: 20px;
+            font-family: $font-family2;
+        }
+    }
+
+    #prev,
+    #next {
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid #ff1353;
+        color: #ff1353;
+        height: 38px;
+        width: 38px;
+        transition: $transition;
+        margin: 20px 3px;
+
+        &:hover {
+            background-color: #ff1353;
+            color: white;
+            border: 2px solid transparent;
+        }
+    }
+
+    .disabled {
+        border: 2px solid rgb(194, 194, 194) !important;
+        color: rgb(194, 194, 194) !important;
+        background-color: transparent !important;
+        cursor: default;
+    }
+
+    .row2,
+    .row3,
+    .row4,
+    .row5 {
+        display: none;
+    }
+
+}
+
+
+
+
+
                         // FOOTER
 
 

@@ -383,6 +383,93 @@
 
 
 
+                        // TAB
+
+
+
+
+
+@media only screen and (max-width: 1700px) {
+
+    .tabParent {
+
+        width: 50% !important;
+
+    }
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .tabParent {
+
+        width: 60% !important;
+
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .tabParent .tabRow .tabContent {
+        padding: 0 !important;
+    }
+
+    .tabParent {
+        width: 80% !important;
+
+        .tabRowParent {
+            min-height: 120px !important;
+        }
+
+        div {
+            text-align: center !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+        
+        .none {
+            display: none;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+
+    .tabParent {
+        width: 100% !important;
+
+        a {
+            font-size: 30px !important;
+
+            i {
+                display: none;
+            }
+        }
+
+        .tabRowParent {
+            min-height: 120px !important;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    .tabParent {
+
+        a {
+            font-size: 22px !important;
+        }
+    }
+
+}
+
+
+
+
+
                         // FOOTER
 
 
