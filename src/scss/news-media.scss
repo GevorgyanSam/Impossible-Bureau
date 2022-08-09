@@ -115,11 +115,11 @@
 
         p {
             &::after {
-                left: 22% !important;
+                left: 25% !important;
             }
         }
 
-        .headerLink {
+        h3 {
             font-size: 30px !important;
         }
     }
@@ -136,11 +136,11 @@
 
         p {
             &::after {
-                left: 28% !important;
+                left: 30% !important;
             }
         }
 
-        .headerLink {
+        h3 {
             font-size: 25px !important;
         }
     }
@@ -158,11 +158,11 @@
 
         p {
             &::after {
-                left: 25.5% !important;
+                left: 27% !important;
             }
         }
 
-        .headerLink {
+        h3 {
             font-size: 25px !important;
         }
     }
@@ -179,24 +179,7 @@
             font-size: 45px !important;
         }
 
-        .headerLink {
-            font-size: 22px !important;
-        }
-    }
-
-}
-
-@media only screen and (max-width: 655px) {
-
-    .headerParent {
-        width: 75% !important;
-        padding-top: 70px !important;
-
-        h1 {
-            font-size: 45px !important;
-        }
-
-        .headerLink {
+        h3 {
             font-size: 22px !important;
         }
     }
@@ -237,10 +220,27 @@
             margin-left: 5% !important;
         }
 
-        .headerLink {
+        h3 {
             margin-left: 5% !important;
         }
 
+    }
+
+}
+
+@media only screen and (max-width: 655px) {
+
+    .headerParent {
+        width: 75% !important;
+        padding-top: 70px !important;
+
+        h1 {
+            font-size: 45px !important;
+        }
+
+        h3 {
+            font-size: 22px !important;
+        }
     }
 
 }
@@ -253,16 +253,19 @@
         text-align: center !important;
 
         h1 {
-            margin-left: 5% !important;
-            font-size: 35px !important;
+            margin-left: 0 !important;
+            text-align: center !important;
+            font-size: 28px !important;
         }
 
         p {
-            margin: 15px !important;
-            margin-left: 5% !important;
+            margin: 15px 0 !important;
+            text-align: center !important;
         }
 
-        .headerLink {
+        h3 {
+            margin-left: 0 !important;
+            text-align: center !important;
             font-size: 18px !important;
         }
 
@@ -450,6 +453,13 @@
 
         .tabRowParent {
             min-height: 120px !important;
+
+            .tabContent {
+
+                h4 {
+                    padding: 0 15px !important;
+                }
+            }
         }
     }
 
@@ -627,6 +637,7 @@
 
             h3 {
                 font-size: 22px !important;
+                padding: 0 17px !important;
             }
 
         }
@@ -635,6 +646,11 @@
 
     .footerParent2 .footerContent2 {
         width: 100% !important;
+
+        h1 {
+            padding: 0 25px !important;
+            font-size: 22px !important;
+        }
     }
 
     #email {

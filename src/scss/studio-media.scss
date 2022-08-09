@@ -186,23 +186,6 @@
 
 }
 
-@media only screen and (max-width: 655px) {
-
-    .headerParent {
-        width: 75% !important;
-        padding-top: 70px !important;
-
-        h1 {
-            font-size: 45px !important;
-        }
-
-        h3 {
-            font-size: 22px !important;
-        }
-    }
-
-}
-
 @media only screen and (max-width: 800px) {
 
     .headerParent {
@@ -245,6 +228,23 @@
 
 }
 
+@media only screen and (max-width: 655px) {
+
+    .headerParent {
+        width: 75% !important;
+        padding-top: 70px !important;
+
+        h1 {
+            font-size: 45px !important;
+        }
+
+        h3 {
+            font-size: 22px !important;
+        }
+    }
+
+}
+
 @media only screen and (max-width: 550px) {
 
     .headerParent {
@@ -253,16 +253,19 @@
         text-align: center !important;
 
         h1 {
-            margin-left: 5% !important;
-            font-size: 35px !important;
+            margin-left: 0 !important;
+            text-align: center !important;
+            font-size: 32px !important;
         }
 
         p {
-            margin: 15px !important;
-            margin-left: 5% !important;
+            margin: 15px 0 !important;
+            text-align: center !important;
         }
 
         h3 {
+            margin-left: 0 !important;
+            text-align: center !important;
             font-size: 18px !important;
         }
 
@@ -392,6 +395,7 @@
 @media only screen and (max-width: 550px) {
 
     .principlesParent {
+        padding: 0 20px !important;
 
         h1 {
             text-align: center !important;
@@ -524,6 +528,7 @@
         align-items: center !important;
         justify-content: center !important;
         text-align: center !important;
+        padding: 0 20px !important;
 
         h1 {
             text-align: center !important;
@@ -875,7 +880,7 @@
         text-align: center !important;
 
         .btnParent {
-            width: 100% !important;
+            width: 85% !important;
         }
     }
 
@@ -1065,6 +1070,7 @@
 
             h3 {
                 font-size: 22px !important;
+                padding: 0 17px !important;
             }
 
         }
@@ -1073,6 +1079,11 @@
 
     .footerParent2 .footerContent2 {
         width: 100% !important;
+
+        h1 {
+            padding: 0 25px !important;
+            font-size: 22px !important;
+        }
     }
 
     #email {
