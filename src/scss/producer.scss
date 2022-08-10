@@ -366,6 +366,32 @@ header section {
 
 
 
+.bg-paralax {
+    margin: 0px auto;
+    margin-bottom: 80px;
+    width: 100% !important;
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: bgAnim 1s forwards 1.5s;
+    opacity: 0;
+
+    @keyframes bgAnim {
+
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+    }
+}
+
 .mainParent {
     width: 50%;
     align-items: center;
