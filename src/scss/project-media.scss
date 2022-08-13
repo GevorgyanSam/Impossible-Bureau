@@ -124,6 +124,7 @@
 
     .headerParent {
         width: 70% !important;
+        padding-top: 80px !important;
 
         h1 {
             font-size: 55px !important;
@@ -239,7 +240,8 @@
 
 @media only screen and (max-width: 1700px) {
 
-    .bg-paralax {
+    .bg-paralax,
+    .bg-paralax2 {
         width: 95% !important;
         height: 550px !important;
     }
@@ -248,7 +250,8 @@
 
 @media only screen and (max-width: 1210px) {
 
-    .bg-paralax {
+    .bg-paralax,
+    .bg-paralax2 {
         height: 500px !important;
         width: 100% !important;
     }
@@ -257,7 +260,8 @@
 
 @media only screen and (max-width: 972px) {
 
-    .bg-paralax {
+    .bg-paralax,
+    .bg-paralax2 {
         height: 450px !important;
     }
 
@@ -265,7 +269,8 @@
 
 @media only screen and (max-width: 900px) {
 
-    .bg-paralax {
+    .bg-paralax,
+    .bg-paralax2 {
         height: 400px !important;
     }
 
@@ -273,7 +278,8 @@
 
 @media only screen and (max-width: 810px) {
 
-    .bg-paralax {
+    .bg-paralax,
+    .bg-paralax2 {
         height: 350px !important;
     }
 
@@ -281,7 +287,8 @@
 
 @media only screen and (max-width: 740px) {
 
-    .bg-paralax {
+    .bg-paralax,
+    .bg-paralax2 {
         height: 300px !important;
     }
 
@@ -289,7 +296,8 @@
 
 @media only screen and (max-width: 670px) {
 
-    .bg-paralax {
+    .bg-paralax,
+    .bg-paralax2 {
         height: 250px !important;
     }
 
@@ -297,7 +305,8 @@
 
 @media only screen and (max-width: 580px) {
 
-    .bg-paralax {
+    .bg-paralax,
+    .bg-paralax2 {
         height: 200px !important;
     }
 
@@ -305,8 +314,8 @@
 
 @media only screen and (max-width: 455px) {
 
-    .bg-paralax {
-        margin-bottom: 40px !important;
+    .bg-paralax,
+    .bg-paralax2 {
         height: 235px !important;
     }
 
@@ -314,7 +323,8 @@
 
 @media only screen and (max-width: 380px) {
 
-    .bg-paralax {
+    .bg-paralax,
+    .bg-paralax2 {
         height: 200px !important;
     }
 
@@ -322,7 +332,8 @@
 
 @media only screen and (max-width: 350px) {
 
-    .bg-paralax {
+    .bg-paralax,
+    .bg-paralax2 {
         height: 150px !important;
     }
 
@@ -330,7 +341,8 @@
 
 @media only screen and (max-width: 300px) {
 
-    .bg-paralax {
+    .bg-paralax,
+    .bg-paralax2 {
         height: 130px !important;
     }
 
@@ -338,8 +350,92 @@
 
 @media only screen and (max-width: 260px) {
 
-    .bg-paralax {
+    .bg-paralax,
+    .bg-paralax2 {
         height: 100px !important;
+    }
+
+}
+
+@media only screen and (max-width: 1670px) {
+
+    .projectContentParent {
+        width: 60% !important;
+        padding: 55px 0 !important;
+    }
+
+}
+
+@media only screen and (max-width: 1320px) {
+
+    .projectContentParent {
+        width: 70% !important;
+        padding: 50px 0 !important;
+    }
+
+}
+
+@media only screen and (max-width: 1136px) {
+
+    .projectContentParent {
+        width: 80% !important;
+        padding: 40px 0 !important;
+
+        h2 {
+            font-size: 27px !important;
+        }
+
+        p {
+            font-size: 16px !important;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 875px) {
+
+    .projectContentParent {
+        width: 85% !important;
+    }
+
+}
+
+@media only screen and (max-width: 655px) {
+
+    .projectContentParent {
+        width: 85% !important;
+
+        h2 {
+            margin-bottom: 30px !important;
+        }
+
+        p {
+            font-size: 15px !important;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .projectContentParent {
+        width: 90% !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        padding: 20px 0 !important;
+
+        h2 {
+            font-size: 25px !important;
+        }
+
+        p {
+            font-size: 14px !important;
+
+            .none {
+                display: none !important;
+            }
+        }
     }
 
 }

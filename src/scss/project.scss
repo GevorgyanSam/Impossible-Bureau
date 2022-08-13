@@ -18,6 +18,7 @@ $font-family2: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 body {
     resize: none;
     user-select: none;
+    background-color: white;
 }
 
 ::-webkit-scrollbar {
@@ -342,9 +343,83 @@ header section {
 
 .bg-paralax {
     margin: 0px auto;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     width: 85%;
     height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0px;
+    animation: bgAnim 1s forwards 1.5s;
+    overflow: hidden;
+    opacity: 0;
+
+    @keyframes bgAnim {
+
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+    }
+}
+
+.projectContentParent {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    margin: 0 auto;
+    padding: 60px 0;
+    animation: mainContent1 1s forwards 1.5s;
+    opacity: 0;
+
+    @keyframes mainContent1 {
+
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+    }
+
+    h2 {
+        color: black;
+        letter-spacing: 1px;
+        font-family: $font-family2;
+        margin-bottom: 40px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    p {
+        color: $gray;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-weight: 400;
+
+        .tda {
+            color: #cc2886;
+            font-weight: 600;
+        }
+    }
+}
+
+.bg-paralax2 {
+    margin: 0px auto;
+    margin-bottom: 30px;
+    width: 85%;
+    height: 600px;
+    overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 0px;
