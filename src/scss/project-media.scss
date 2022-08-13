@@ -361,7 +361,6 @@
 
     .projectContentParent {
         width: 60% !important;
-        padding: 55px 0 !important;
     }
 
 }
@@ -370,7 +369,7 @@
 
     .projectContentParent {
         width: 70% !important;
-        padding: 50px 0 !important;
+        padding: 55px 0 !important;
     }
 
 }
@@ -379,9 +378,10 @@
 
     .projectContentParent {
         width: 80% !important;
-        padding: 40px 0 !important;
+        padding: 50px 0 !important;
 
-        h2 {
+        h2,
+        h3 {
             font-size: 27px !important;
         }
 
@@ -405,7 +405,8 @@
     .projectContentParent {
         width: 85% !important;
 
-        h2 {
+        h2,
+        h3 {
             margin-bottom: 30px !important;
         }
 
@@ -423,10 +424,11 @@
         align-items: center !important;
         justify-content: center !important;
         text-align: center !important;
-        padding: 20px 0 !important;
+        padding: 40px 0 !important;
 
-        h2 {
-            font-size: 25px !important;
+        h2,
+        h3 {
+            font-size: 22px !important;
         }
 
         p {

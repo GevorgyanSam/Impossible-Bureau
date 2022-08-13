@@ -343,7 +343,6 @@ header section {
 
 .bg-paralax {
     margin: 0px auto;
-    margin-bottom: 30px;
     width: 85%;
     height: 600px;
     background-repeat: no-repeat;
@@ -416,7 +415,6 @@ header section {
 
 .bg-paralax2 {
     margin: 0px auto;
-    margin-bottom: 30px;
     width: 85%;
     height: 600px;
     overflow: hidden;
@@ -438,6 +436,34 @@ header section {
             transform: translateX(0);
         }
 
+    }
+}
+
+.social {
+    background-color: #7a6f69;
+
+    div {
+
+        h3 {
+            color: white;
+            letter-spacing: 1px;
+            font-family: $font-family2;
+            margin-bottom: 40px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        p {
+            color: #aaa39f;
+        }
+
+        div {
+            margin-top: 60px;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }
 
