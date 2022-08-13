@@ -341,13 +341,16 @@ header section {
 
 
 
+.scroll-bg1 {
+    background-position: center -100px;
+}
+
 .bg-paralax {
     margin: 0px auto;
     width: 85%;
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 0px;
     animation: bgAnim 1s forwards 1.5s;
     overflow: hidden;
     opacity: 0;
@@ -464,6 +467,18 @@ header section {
                 width: 100%;
             }
         }
+    }
+}
+
+.project-logo {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+        width: 130px !important;
     }
 }
 
