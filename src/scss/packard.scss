@@ -375,3 +375,56 @@ header section {
         display: none;
     }
 }
+
+.packardContentParent {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    margin: 0 auto;
+    padding: 60px 0;
+    animation: mainContent1 1s forwards 1.5s;
+    opacity: 0;
+
+    @keyframes mainContent1 {
+
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+    }
+
+    h2 {
+        color: black;
+        letter-spacing: 1px;
+        font-family: $font-family2;
+        margin-bottom: 40px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    p {
+        color: $gray;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    div {
+        margin: 60px 0;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.primaryImg {
+    width: 100%;
+}
